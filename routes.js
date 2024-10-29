@@ -5,7 +5,7 @@ import controller from './controller.js';
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.send('Bem-vindo à API do Currículo!');
+  res.send('/curriculo -> GET ------- /criarCurriculo -> POST  -------- /deletarCurriculo/{id} -> DELETE');
 });
 router.get('/curriculo', controller.getCurriculo);
 router.post('/criarCurriculo', controller.createCurriculo);
